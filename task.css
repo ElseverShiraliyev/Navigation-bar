@@ -1,0 +1,46 @@
+body{
+    width: 100%;
+    height: 900px;
+    margin: 20px;
+}
+h1 , h2{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 20px;
+
+}
+.sorgu{
+    width: 25% ;
+    margin: 20px;
+    border: 2px dashed orangered;
+}
+.form{
+    padding: 10px;
+}
+.telebeler{
+    caption-side: initial;
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px;
+    border: 2px solid lightblue;
+}
+
+.telebeler td , th {
+    border: 1px solid lightblue;
+    padding: 8px;
+}
+#th1{
+
+  text-align: left;
+  background-color: #0a8b9c;
+  color: white;
+  
+}
+.tbody tr:hover{
+    background-color: #7aa8c2;
+    color: black;
+    transition: 0.5s;
+}
+

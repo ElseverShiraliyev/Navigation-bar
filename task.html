@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <title>Ev tapşırığı</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="task.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fortask">
+      <h1>Tələbələr üçün sorğu</h1>
+      <table class="telebeler">
+        <thead class="thead">
+          <tr id="th1">
+            <th>Tələbə İD</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Fakultə</th>
+            <th>İxtisas</th>
+            <th>Qrup</th>
+            <th>Hobbi</th>
+            <th>Ən sevdiyi idman</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr>
+            <td>12245</td>
+            <td>Elsevər</td>
+            <td>Şiraliyev</td>
+            <td>İTİF</td>
+            <td>Kompüter Mühəndisliyi</td>
+            <td>653.20</td>
+            <td>Musiqi dinləmək</td>
+            <td>Futbol</td>
+          </tr>
+          <tr>
+            <td>12243</td>
+            <td>Kənan</td>
+            <td>Babayev</td>
+            <td>İTİF</td>
+            <td>Kompüter Mühəndisliyi</td>
+            <td>651.20</td>
+            <td>Rəsm çək.</td>
+            <td>Tennis</td>
+          </tr>
+          <tr>
+            <td>12334</td>
+            <td>Əziz</td>
+            <td>Əsədov</td>
+            <td>KTF</td>
+            <td>Kimya Mühəndisliyi</td>
+            <td>622.20</td>
+            <td>Film iz.</td>
+            <td>Volleybol</td>
+          </tr>
+          <tr>
+            <td>12267</td>
+            <td>Talib</td>
+            <td>Bəşirli</td>
+            <td>QNMF</td>
+            <td>Mexanika Mühəndisliyi</td>
+            <td>531.20</td>
+            <td>Kitab oxu.</td>
+            <td>Futbol</td>
+          </tr>
+          <tr>
+            <td>12289</td>
+            <td>Elmir</td>
+            <td>Mirzəyev</td>
+            <td>İTİF</td>
+            <td>İnf. Təhlükəsizliyi</td>
+            <td>662.20</td>
+            <td>Rəsm çək.</td>
+            <td>Tennis</td>
+          </tr>
+          <tr>
+            <td>12355</td>
+            <td>İlqar</td>
+            <td>Səlimov</td>
+            <td>KTF</td>
+            <td>Kimya Mühəndisliyi</td>
+            <td>623.20</td>
+            <td>Kitab oxu.</td>
+            <td>Voleybol</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br><br>
+    <div class="sorgu">
+      <h2>Anket</h2>
+      <form class="form">
+        <label>Fakultə:
+            <input type="radio" name="fakulte" id="itif" value="İTİF">İTİF
+            <input type="radio" name="fakulte" id="ktf" value="KTF">KTF
+            <input type="radio" name="fakulte" id="qnmf" value="QNMF">QNMF
+        </label>
+        <br><br>
+        <label>Zəhmət olmasa qrupu seçin:
+          <select name="qrup" id="qrupnumber">
+              <option value="651.20">651.20</option>
+              <option value="653.20">653.20</option>
+              <option value="622.20">622.20</option>
+              <option value="531.20">531.20</option>
+              <option value="662.20">662.20</option>
+              <option value="623.20">623.20</option>
+          </select>
+          </select>
+          </label>
+          <br><br>
+          <label class="check2">Hobbinizi seçin:
+          <br>
+          <input type="checkbox" name="kurs1" id="resm" value="Rəsm çəkmək">
+          <label for="hobbi1"> Rəsm çəkmək</label><br>
+          <input type="checkbox" name="kurs1" id="kitab"  value="Kitab oxumaq">
+          <label for="hobbi2"> Kitab oxumaq</label><br>
+          <input type="checkbox" name="kurs1" id="film" value="Film İzləmək">
+          <label for="hobbi3"> Film İzləmək</label><br>
+          <input type="checkbox" name="kurs1" id="music" value="Musiqi dinləmək">
+          <label for="hobbi3"> Musiqi dinləmək</label>
+          </label>
+          <br><br>
+          <label class="check3">Sevdiyiniz idman növü hansıdır?
+            <br>
+            <input type="checkbox" id="futbol" value="Futbol">
+            <label for="idman1">Futbol</label><br>
+            <input type="checkbox" id="voleybol" value="Voleybol">
+            <label for="idman2">Voleybol</label><br>
+            <input type="checkbox" id="tennis" value="Tennis">
+            <label for="idman3">Tennis</label>
+          </label>
+          <br><br>
+          <label for="gonder">
+            <input type="submit" value="Göndər">
+          </label>
+      </form>
+    </div>
+  </body>
+</html>
