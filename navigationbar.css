@@ -1,0 +1,77 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+}   
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+ul.menu{
+    background: rgb(24, 138, 119);
+    height: 50px;
+}
+ul.menu >li{
+    float: left;
+}
+ul.menu > li > a{
+    display: block;
+    margin-top: 3px;
+    margin-left: 3px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    padding: 0 40px;
+    line-height: 42px;
+}
+ul.menu ul{
+    background: rgb(71, 170, 140);
+    width: 200px;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    opacity: 0;
+    transition: 250ms all;
+    visibility: hidden;
+}
+ul.menu ul li{
+    position: relative;
+}
+ul.menu ul li a{
+    display: block;
+    padding: 7px 14px;
+    color: white;
+}
+ul.menu >li ul ul{
+    top: 0;
+    left:180px
+}
+
+ul.menu >li:hover >ul{
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+}
+ul.menu ul li:hover >ul{
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    left:200px;
+    background: rgb(87, 172, 136);
+}
+a:hover{
+    background: rgb(20, 179, 118);
+    border: 1px solid rgb(20, 179, 118);
+}
+#openmenu{
+    background-color:rgb(71, 170, 140);
+    padding: 12px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    display: none;
+}
